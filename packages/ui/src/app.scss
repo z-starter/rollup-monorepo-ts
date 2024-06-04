@@ -1,0 +1,30 @@
+:root {
+  --g-btn-color: blueviolet;
+}
+
+body {
+  background: #232323;
+  color: #fff;
+}
+
+h1 {
+  margin-block-end: 3rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#app {
+  position: absolute;
+  inset-inline-start: 50%;
+  inset-block-start: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div[is="my-counter"] {
+  width: 300px;
+  &::part(counter-text) {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: teal;
+  }
+}
