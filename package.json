@@ -5,6 +5,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
+    "dev": "concurrently --kill-others \"npm:server:dev\" \"npm:ui:dev\"",
     "build": "node scripts/build.js",
     "start": "node scripts/start.js",
     "ui:dev": "yarn workspace @rollup-monorepo-ts/ui dev",
@@ -15,5 +16,8 @@
   "workspaces": [
     "packages/*"
   ],
-  "packageManager": "yarn@4.2.2"
+  "packageManager": "yarn@4.2.2",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
 }

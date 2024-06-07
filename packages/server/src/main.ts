@@ -4,7 +4,12 @@ import { serveStatic } from "@hono/node-server/serve-static"
 import { WebSocketServer } from "ws"
 import { join as pathJoin } from "path"
 
-const port = 3000
+const environment = process.env.NODE_ENV
+const isDevelopment = environment === "development"
+
+console.log(`\n${environment}\n`)
+
+const port = isDevelopment ? 3000 : 80
 const app = new Hono()
 
 app.use(

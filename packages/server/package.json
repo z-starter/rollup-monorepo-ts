@@ -6,11 +6,11 @@
   "license": "MIT",
   "scripts": {
     "lint": "tslint -c tslint.json -p tsconfig.json --fix",
+    "dev": "NODE_ENV=development concurrently --kill-others \"npm:watch\" \"npm:start\"",
     "build": "concurrently \"npm:clean\" \"rollup -c\"",
     "clean": "node ./scripts/clean.js",
     "watch": "rollup -c --z-dev -w",
-    "start": "nodemon .",
-    "dev": "concurrently --kill-others \"npm:watch\" \"npm:start\""
+    "start": "nodemon ."
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.2.3",

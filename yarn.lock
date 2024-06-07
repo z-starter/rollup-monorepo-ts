@@ -2021,6 +2021,8 @@ __metadata:
 "rollup-monorepo-ts@workspace:.":
   version: 0.0.0-use.local
   resolution: "rollup-monorepo-ts@workspace:."
+  dependencies:
+    concurrently: "npm:^8.2.2"
   languageName: unknown
   linkType: soft
 
