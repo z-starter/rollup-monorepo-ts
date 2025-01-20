@@ -8,10 +8,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@z-code/vite-plugin-swc": "^0.4.0",
-    "sass": "^1.77.2",
-    "typescript": "^5.4.5",
-    "vite": "^5.2.11"
+    "@z-code/vite-plugin-swc": "^0.5.2",
+    "sass": "^1.83.4",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.9"
   },
   "packageManager": "yarn@4.2.2"
 }
